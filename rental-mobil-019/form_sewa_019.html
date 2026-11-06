@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Penyewaan | Rental Mobil Legenda 019</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Rental Mobil Legenda</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="katalog_019.html">Katalog Mobil</a></li>
+        <li><a href="form_sewa_019.html">Form Penyewaan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Form Penyewaan</h2>
+
+      <form id="form-sewa" action="#" method="post" novalidate>
+
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: M.ASROR RAMDHANI" required>
+
+        <label for="mobil">Pilihan Mobil</label>
+        <select id="mobil" name="mobil" required>
+          <option value="">-- Pilih Mobil --</option>
+          <option value="Kijang Kapsul 019">Kijang Kapsul 019 - Rp 500.019/hari</option>
+          <option value="Suzuki Carry 019">Suzuki Carry 019 - Rp 350.019/hari</option>
+          <option value="Suzuki Katana 019">Suzuki Katana 019 - Rp 450.019/hari</option>
+          <option value="Toyota Corolla DX 019">Toyota Corolla DX 019 - Rp 400.019/hari</option>
+          <option value="Daihatsu Taft 019">Daihatsu Taft 019 - Rp 550.019/hari</option>
+          <option value="VW Kodok 019">VW Kodok 019 - Rp 600.019/hari</option>
+        </select>
+
+        <label for="lama">Lama Sewa (Hari)</label>
+        <input type="number" id="lama" name="lama" min="1" placeholder="Minimal 1 hari" required>
+
+        <div id="pesan" class="pesan" aria-live="polite"></div>
+
+        <button type="submit">Kirim Pesanan</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rental Mobil Legenda 019 | M. Asror Ramdhani</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
